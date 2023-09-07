@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	background-color: #1f1f1f;
+	font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+	color: whitesmoke;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#drum-machine {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+
+.drum-grid {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	gap: 15px;
+	color: gray;
+}
+
+.drum-pad {
+	border: 1px solid black;
+	display: flex;
+	height: 100px;
+	width: 100px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	box-shadow: 1px 1px black;
+	cursor: pointer;
+	background-color: #2f2f2f;
+}
+
+.drum-pad:hover {
+	background-color: #3f3f3f;
+}
+
+#display {
+	margin: 20px;
+	color: #9f9f9f;
+}
+
+@media screen and (max-width: 650px) {
+	.App {
+		transform: scale(0.7);
+	}
+}
